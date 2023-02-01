@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        // code de base 
+        // document.addEventListener('DOMContentLoaded',function(){
+        //     // to change color of element to red
+        //     document.querySelector("#red").onclick=function(){
+        //         document.querySelector("#hello").style.color="red"
+        //     }
+        //     document.querySelector("#blue").onclick=function(){
+        //         document.querySelector("#hello").style.color="blue"
+        //     }
+        //     document.querySelector("#green").onclick=function(){
+        //         document.querySelector("#hello").style.color="green"
+        //     }
+       // })
+
+            // CODE REFACTORE 
+    //    document.addEventListener('DOMContentLoaded',function () {
+    //     document.querySelectorAll("button").forEach(function(button){
+    //         button.onclick=function(){
+    //             document.querySelector("#hello").style.color=button.dataset.color
+    //         }
+    //     })
+    //    })
+
+    document.addEventListener('DOMContentLoaded',function(){
+        document.querySelector("select").onchange=function(){
+            document.querySelector("#hello").style.color=this.value;
+            console.log(this.value)
+        }
+       
+    })
+    
+    
+    </script>
+</head>
+<body>
+    <h1 id="hello">Hello</h1>
+    <!-- code de base  -->
+    <!-- <button id="red">rouge</button>
+    <button id="blue">bleu</button>
+    <button id="green">vert</button> -->
+
+    <!-- code refactoré -->
+    <!-- <button data-color="red">red</button>
+    <button data-color="blue">blue</button>
+    <button data-color="green">green</button> -->
+
+   <select>
+    <option value="black">Black</option>
+    <option value="red">Red</option>
+    <option value="green">Green</option>
+    <option value="blue">Blue</option>
+   </select>
+   <button id="but1">valider</button>
+
+</body>
+</html>

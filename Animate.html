@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Animate Page</title>
+    <style>
+         @keyframes move {
+            0%{
+                left: 0%;
+            }
+            50%{
+                left: 50%;
+            }
+            100%{
+                left: 100%;
+            }
+        }
+        @keyframes grow {
+            from{
+                font-size: 20px;
+             left:0%;
+            }
+            to{
+                font-size: 100px;
+                left: 50%;
+            }
+        }
+        body{
+            width: 100vw;
+            margin: 0;
+        }
+        h1{
+            position: relative;
+            animation-name: grow;
+            animation-duration: 5s;
+            animation-fill-mode: forwards;
+        }
+        h2{
+            animation-name: move;
+            position: relative;
+            animation-duration: 5s;
+            /* animation-fill-mode: forwards; */
+            /* animation-iteration-count: infinite; */
+        }
+       
+    </style>
+</head>
+<body>
+    <h1>Animate!</h1>
+    <h2>MOVE ANIMATE!!</h2>
+</body>
+</html>

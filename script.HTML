@@ -1,0 +1,82 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap-5.3.0-alpha1-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="script.css">
+    <title>Document</title>
+    <script src="script.js"></script>
+</head>
+<body >
+    <button type="button" onclick="nouveauContenu()">nouveau contenu</button>
+    <nav class="nav">
+
+        <a href="#sechome">HOME</a>
+        <a href="#seccontact">contact</a>
+        <a href="#secabout">about us</a>
+        <a href="accueil.html">accueil</a>
+    </nav>
+    <h1>HOME SECTION</h1> 
+    <section id="sechome" class="home">
+      
+       <div class="formContainer">
+           <div class="form">
+            <form  class="form"onclick="postForm()">
+                <input id="inName"type="text" placeholder="Nom">
+                <input id="inEmail" type="email" placeholder="Email" require>
+                <input id="inPwd" type="password" placeholder="Password" required>
+                <input type="submit" value="Valider">
+                <!-- <button onclick="postForm()">Post user</button> -->
+            </form>
+           </div>
+       </div>
+    </section>
+    <section id="seccontact" class="contact">
+        <div class="img">
+            <a href="https://fr.wikipedia.org/wiki/Base_de_donn%C3%A9es" target="_blank">
+              <img src="./media/DbImg.png" alt="DbImg">
+          </a>  
+          
+          <div class="container-fluid">
+            <div class="container">
+      <article>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et delectus obcaecati placeat necessitatibus minima voluptatum ullam maiores perferendis vel? Dolorum eaque, eligendi nihil unde rem quis voluptatibus dolore voluptatum corporis.</p>
+      </article>
+          </div>
+        
+        </div>
+
+
+    </section>
+   
+    <section id="secabout" class="about">
+        
+        <h1>ABOUT US</h1>
+
+        <div class="container text-center">
+            <div class="row">
+              <div class="col">
+                <h1> informatique</h1>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa ducimus vel cupiditate quidem natus, harum excepturi fugiat dolores deserunt inventore, ullam doloremque sint ut praesentium veniam illum nobis pariatur repudiandae.
+                </p>
+              </div>
+              <div class="col">
+                <h1> science</h1>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa ducimus vel cupiditate quidem natus, harum excepturi fugiat dolores deserunt inventore, ullam doloremque sint ut praesentium veniam illum nobis pariatur repudiandae.
+            </p>
+              </div>
+              <div class="col">
+                <h1> mathematique</h1>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa ducimus vel cupiditate quidem natus, harum excepturi fugiat dolores deserunt inventore, ullam doloremque sint ut praesentium veniam illum nobis pariatur repudiandae.
+            </p>
+              </div>
+              </div>
+            </div>
+          </div>
+    </section>
+</body>
+</html>
